@@ -8,29 +8,58 @@
 📌 Perguntas e respostas
 
 1. Quais são as entidades necessárias?
-Empresa, tecnologia e colaborador
+Empresa, tecnologia, empresa tecnologia e colaborador
 
 2. Quais são os principais campos e seus respectivos tipos?
+   
+Entidades e Campos 📊
 Empresa:
-        ID (chave primária, inteiro)
-        Nome (texto)
-        Setor (texto)
+
+  ID int [pk]
+  CNPJ varchar(14)
+  Nome varchar(100)
+  Endereço varchar(100)
+  Telefone varchar(15)
+  Email varchar(50)
+  Setor varchar(30)
+
 Tecnologia:
-        ID (chave primária, inteiro)
-        Nome (texto)
-        Área (texto)
+
+  ID int [pk]
+  Nome varchar(100)
+  Área varchar(30)
+
+Empresa tecnologia:
+
+  ID_Empresa int
+  ID_Tecnologia int
+
 Colaborador:
-        ID (chave primária, inteiro)
-        Nome (texto)
-        Cargo (texto)
-        ID_Empresa (chave estrangeira referenciando Empresa)
-        ID_Tecnologia (chave estrangeira referenciando Tecnologia)
+
+  ID int [pk]
+  Nome varchar(100)
+  Cargo varchar(30)
+  Email varchar(50)
+  Endereço varchar(100)
+  ID_Empresa int
+  ID_Tecnologia int
+
  
 3. Como essas entidades estão relacionadas?
-Uma empresa pode utilizar várias tecnologias, então há uma relação de 1 para muitas entre Empresa e Tecnologia.
-Um colaborador pertence a uma empresa e pode ter conhecimento em várias tecnologias, então há uma relação de 1 para muitas entre Empresa e Colaborador, e também uma relação de muitos para muitos entre Tecnologia e Colaborador.
+4. 
+    Relacionamento entre Empresa e Tecnologia:
+        A cardinalidade desse relacionamento é muitos para muitos (N:M).
+        Uma empresa pode utilizar várias tecnologias e uma tecnologia pode ser utilizada por várias empresas.
 
-4. Simule 2 registros para cada entidade:
+    Relacionamento entre Empresa e Colaborador:
+        A cardinalidade desse relacionamento é um para muitos (1:N).
+        Uma empresa pode ter vários colaboradores, mas um colaborador pertence a apenas uma empresa.
+
+    Relacionamento entre Tecnologia e Colaborador:
+        A cardinalidade desse relacionamento também é um para muitos (1:N).
+        Um colaborador pode ter conhecimento em várias tecnologias, mas uma tecnologia pode estar associada a vários colaboradores.
+
+5. Simule 2 registros para cada entidade:
 
 Empresa:
         ID: 1, Nome: "Empresa A", Setor: "Tecnologia"
