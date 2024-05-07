@@ -46,7 +46,7 @@ Colaborador:
 
  
 3. Como essas entidades estão relacionadas?
-4. 
+ 
     Relacionamento entre Empresa e Tecnologia:
         A cardinalidade desse relacionamento é muitos para muitos (N:M).
         Uma empresa pode utilizar várias tecnologias e uma tecnologia pode ser utilizada por várias empresas.
@@ -59,7 +59,7 @@ Colaborador:
         A cardinalidade desse relacionamento também é um para muitos (1:N).
         Um colaborador pode ter conhecimento em várias tecnologias, mas uma tecnologia pode estar associada a vários colaboradores.
 
-5. Simule 2 registros para cada entidade:
+4. Simule 2 registros para cada entidade:
 
 Empresa:
         ID: 1, Nome: "Empresa A", Setor: "Tecnologia"
