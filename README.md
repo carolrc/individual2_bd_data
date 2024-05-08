@@ -45,16 +45,16 @@
 
   
 - `3. Como essas entidades estão relacionadas?`:   
-Relacionamento entre Empresa e Tecnologia:
+Relacionamento entre empresa e tecnologia:
 
         A cardinalidade desse relacionamento é muitos para muitos (N:M).
         Uma empresa pode utilizar várias tecnologias e uma tecnologia pode ser utilizada por várias empresas.
 
-    Relacionamento entre Empresa e Colaborador:
+    Relacionamento entre empresa e colaborador:
         A cardinalidade desse relacionamento é um para muitos (1:N).
         Uma empresa pode ter vários colaboradores, mas um colaborador pertence a apenas uma empresa.
 
-    Relacionamento entre Tecnologia e Colaborador:
+    Relacionamento entre tecnologia e colaborador:
         A cardinalidade desse relacionamento também é um para muitos (1:N).
         Um colaborador pode ter conhecimento em várias tecnologias, mas uma tecnologia pode estar associada a vários colaboradores.
 
@@ -72,7 +72,7 @@ Colaborador:
 
 
  #  📁 Acesso ao projeto
-  Você pode acessar os arquivos do projeto clicando [aqui(https://github.com/carolrc/individual2_bd_data/)].
+  Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/carolrc/individual2_bd_data/).
   
 
 
