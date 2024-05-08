@@ -72,7 +72,7 @@ Colaborador:
 
 
  #  📁 Acesso ao projeto
-  Você pode acessar os arquivos do projeto clicando [aqui].([https://pages.github.com/](https://github.com/carolrc/individual2_bd_data/)
+  Você pode acessar os arquivos do projeto clicando [aqui].([https://github.com/carolrc/individual2_bd_data/])
   
 
 
