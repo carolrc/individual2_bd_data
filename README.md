@@ -1,4 +1,4 @@
-Resumo do projeto
+#   Resumo do projeto:
 
 ➔ O sistema irá auxiliar na avaliação de quais são as tecnologias que as empresas parceiras estão utilizando e quem são seus colaboradores;
 
@@ -7,8 +7,12 @@ Resumo do projeto
 
 # ✔️  Perguntas e respostas:
 
-- `1. Quais são as entidades necessárias?`: Empresa, tecnologia, empresa tecnologia e colaborador
-- `Quais são os principais campos e seus respectivos tipos?`: Empresa:
+- `1. Quais são as entidades necessárias?`:
+ Empresa, tecnologia, empresa tecnologia e colaborador
+
+- `2. Quais são os principais campos e seus respectivos tipos?`:
+
+<strong>Empresa:</strong>
 
   ID int [pk]
   CNPJ varchar(14)
@@ -18,18 +22,18 @@ Resumo do projeto
   Email varchar(50)
   Setor varchar(30)
 
-Tecnologia:
+<strong>Tecnologia:</strong>
 
   ID int [pk]
   Nome varchar(100)
   Área varchar(30)
 
-Empresa tecnologia:
+<strong>Empresa tecnologia:</strong>
 
   ID_Empresa int
   ID_Tecnologia int
 
-Colaborador:
+<strong>Colaborador:</strong>
 
   ID int [pk]
   Nome varchar(100)
@@ -38,7 +42,11 @@ Colaborador:
   Endereço varchar(100)
   ID_Empresa int
   ID_Tecnologia int
-- `Como essas entidades estão relacionadas?`:    Relacionamento entre Empresa e Tecnologia:
+
+  
+- `3. Como essas entidades estão relacionadas?`:   
+Relacionamento entre Empresa e Tecnologia:
+
         A cardinalidade desse relacionamento é muitos para muitos (N:M).
         Uma empresa pode utilizar várias tecnologias e uma tecnologia pode ser utilizada por várias empresas.
 
@@ -50,7 +58,9 @@ Colaborador:
         A cardinalidade desse relacionamento também é um para muitos (1:N).
         Um colaborador pode ter conhecimento em várias tecnologias, mas uma tecnologia pode estar associada a vários colaboradores.
 
-- `Simule 2 registros para cada entidade:`: Empresa:
+- `4. Simule 2 registros para cada entidade:`:
+
+Empresa:
         ID: 1, Nome: "Empresa A", Setor: "Tecnologia"
         ID: 2, Nome: "Empresa B", Setor: "Educação"
 Tecnologia:
@@ -61,7 +71,8 @@ Colaborador:
         ID: 2, Nome: "Maria", Cargo: "Analista de Dados", ID_Empresa: 2, ID_Tecnologia: 2
 
 
-  📁 Acesso ao projeto
-  Você pode acessar os arquivos do projeto clicando <a href"https://github.com/carolrc/individual2_bd_data">aqui</a>.
+ #  📁 Acesso ao projeto
+  Você pode acessar os arquivos do projeto clicando [aqui].([https://pages.github.com/](https://github.com/carolrc/individual2_bd_data/)
+  
 
 
